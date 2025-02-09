@@ -3,19 +3,19 @@
 ->nested dependancies are called as transinit dependancies.
 ->^ this means it always update packages
 
-`"node_modules/@babel/code-frame": {
-      "version": "7.26.2", 
-      "resolved": "https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.26.2.tgz",
-      "integrity": "sha512-RJlIHRueQgwWitWgF8OdFYGZX328Ax5BCemNGlqHfplnRT9ESi8JkFlvaVYbS+UubVY6dpv87Fs2u5M29iNFVQ==",
-      "dev": true,
-      "dependencies": {
-        "@babel/helper-validator-identifier": "^7.25.9",
-        "js-tokens": "^4.0.0",
-        "picocolors": "^1.0.0"
-      },
-      "engines": {
-        "node": ">=6.9.0"}
-`
+#### "node_modules/@babel/code-frame": {
+####       "version": "7.26.2", 
+####      "resolved": "https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.26.2.tgz",
+####     "integrity": "sha512-RJlIHRueQgwWitWgF8OdFYGZX328Ax5BCemNGlqHfplnRT9ESi8JkFlvaVYbS+UubVY6dpv87Fs2u5M29iNFVQ==",
+####       "dev": true,
+####       "dependencies": {
+####         "@babel/helper-validator-identifier": "^7.25.9",
+####         "js-tokens": "^4.0.0",
+ ####        "picocolors": "^1.0.0"
+ ####      },
+####       "engines": {
+####         "node": ">=6.9.0"}
+
 ->version mean local version
 ->integrity it create hash which contain hash which is present in local and it make sure the deployment version may conatin same version as local
 ->dev it indicate that it is dev dependancies 
