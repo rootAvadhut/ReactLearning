@@ -2,7 +2,8 @@
 
 ->nested dependancies are called as transinit dependancies.
 ->^ this means it always update packages
-"node_modules/@babel/code-frame": {
+
+`"node_modules/@babel/code-frame": {
       "version": "7.26.2", 
       "resolved": "https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.26.2.tgz",
       "integrity": "sha512-RJlIHRueQgwWitWgF8OdFYGZX328Ax5BCemNGlqHfplnRT9ESi8JkFlvaVYbS+UubVY6dpv87Fs2u5M29iNFVQ==",
@@ -14,7 +15,7 @@
       },
       "engines": {
         "node": ">=6.9.0"}
-
+`
 ->version mean local version
 ->integrity it create hash which contain hash which is present in local and it make sure the deployment version may conatin same version as local
 ->dev it indicate that it is dev dependancies 
@@ -29,12 +30,12 @@ npx parcel index.html -> 1st it build application and it will excute index.html 
 2)it is costly operation which involes network call where it uses internet always and it always access from that CDN link
 good practice install locally **npm install react and npm install react-dom**
 
-# error
+### error
 - TypeError: (0 , _reactDomDefault.default).createRoot is not a function =>solution import ReactDOM from "react-dom/client"; >The error "TypeError: (0 , _reactDomDefault.default).createRoot is not a function" usually occurs because you're using an outdated version of ReactDOM that doesn't support createRoot, or you've imported react-dom incorrectly.
 normal js script there no import that why when use
-# error=
+### error=
 - Browser scripts cannot have imports or exports. =>this happend because our js script don't have import keyword so to reslove this we need to set type in script tag which is module **<script type="module" src="./App.js"></script>**
-# Parcel:
+### Parcel:
 - Dev bulid
 - local Server 
 - HMR =>hot module Replacement => it will automatically refresh webpage
@@ -52,25 +53,24 @@ normal js script there no import that why when use
 - goto parceljs.org read doc to know about 
 - tree shaking - remove unused code 
 - Different dev and prod dundles for dev npx parcel index.html and for prod npx parcel build index.html
-# npx parcel build .\index.html 
-- # error 
+### npx parcel build .\index.html 
+- #### error 
     - @parcel/namer-default: Target "main" declares an output file path of "index.js" which does not match the compiled bundle type "html".
-- # reslove error
+- #### reslove error
     - goto packages.json and remove " "main": "index.js","
 - i will create production read code 
-# we add .parcel-cache dist into .gitignore
+### we add .parcel-cache dist into .gitignore
     - our local code pushes to github alog with package.json and package-lock.json 
     - when we want to test our app on server that time we use npm install
     - this command will create node-module same as local same method apply to npx parcel index.html
  
- # browerlist ->
+ ### browerlist ->
     - this module help to make app compatiable to browser 
     - to do this goto package.json and add browserlist: ["last 2 chrom version" ] pass browser in array 
     - it will configure to work on browsers
     - goto browserlist.dev
     - we can provide contry specific browser
 
-# IN DAY 02 WE LEARN ABOUT NPM, GITIGNORE, PARCEL AND BROWERLIST ,WE HAVE CREATE REACT APP
+### IN DAY 02 WE LEARN ABOUT NPM, GITIGNORE, PARCEL AND BROWERLIST ,WE HAVE CREATE REACT APP
 
 # DAY 03
-n
